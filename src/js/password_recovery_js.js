@@ -8,6 +8,7 @@ document.getElementById("captchaInputError").style.display="none";
 
 function validateInput() 
 {
+    onPageLoad();
     document.getElementById("buttonIcon").classList.add('w3-spin');
     document.getElementById("buttonIcon").classList.replace('fa-check','fa-spinner');
 
@@ -15,8 +16,8 @@ function validateInput()
     if(ValidateEmail(emailInput))
     {
         //VALIDATION ON SERVER
-        $captchaInput=document.getElementById("captchaInput").value;
-        if($captchaInput) {
+        var captchaInput=document.getElementById("captchaInput").value;
+        if(captchaInput) {
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
@@ -24,7 +25,17 @@ function validateInput()
                     var obj = JSON.parse(serverResponse);
                     if(obj.captchavalid=="TRUE")
                         {
-
+                            if(obj.response!="NOT_FOUND")
+                            {
+                                    alert("SEND OTP NOW"+serverResponse);
+                            }
+                            else
+                            {
+                            
+                                document.getElementById('captchaImage').src='captcha/captcha_code.php';
+                                document.getElementById("emailInputError").innerHTML="Unregistered Email";
+                                document.getElementById("emailInputError").style.display="block";    
+                            }
                         }
                     else
                         {
@@ -35,7 +46,7 @@ function validateInput()
             };
             xhttp.open("POST", "validateInput.php", true);
             xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-            xhttp.send("captchaInput=" + $captchaInput);
+            xhttp.send("captchaInput=" +captchaInput+"&emailInput="+emailInput);
         }
         else
         {
