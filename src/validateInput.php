@@ -1,8 +1,8 @@
 <?php
 session_start();
 $response['response']='OK';
-
-if($_POST["captchaInput"]===$_SESSION["captcha_code"])
+include 'functions.php';
+if(substr($_POST["captchaInput"],0,6)===$_SESSION["captcha_code"])
     {
         $response['captchavalid']='TRUE';
 
@@ -26,8 +26,9 @@ if($_POST["captchaInput"]===$_SESSION["captcha_code"])
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
-           
-            
+           $_SESSION["OTP"]=rand(1000,9999);
+           $_SESSION["email"]=$_POST['emailInput'];
+           EmailSend($_POST['emailInput'],'Password reset code for your '.$xml->organization_account_name,"Hi,<br><br>Password recovery code for your ".$xml->organization_account_name." is <b>".$_SESSION["OTP"]."</b>.<br><br>Regards,<br>Password Recovery Team.");
 
         } else {
             $response['response']='NOT_FOUND';

@@ -2,10 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e51a962-c0ae-4b4c-80fd-f61f996fc786" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/validatecode.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/getEmail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/password_recovery_js.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/password_recovery_js.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validateInput.php" beforeDir="false" afterPath="$PROJECT_DIR$/validateInput.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/password_recovery_email_credentials/password_reset_credentials.xml" beforeDir="false" afterPath="$PROJECT_DIR$/password_recovery_email_credentials/password_reset_credentials.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PHPMailer-master/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/PHPMailer-master/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PHPMailer-master/.scrutinizer.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/PHPMailer-master/.scrutinizer.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PHPMailer-master/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/PHPMailer-master/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PHPMailer-master/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/src/PHPMailer-master/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PHPMailer-master/PHPMailerAutoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PHPMailer-master/PHPMailerAutoload.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PHPMailer-master/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/PHPMailer-master/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PHPMailer-master/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/PHPMailer-master/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PHPMailer-master/class.phpmailer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PHPMailer-master/class.phpmailer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PHPMailer-master/class.phpmaileroauth.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PHPMailer-master/class.phpmaileroauth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PHPMailer-master/class.phpmaileroauthgoogle.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PHPMailer-master/class.phpmaileroauthgoogle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PHPMailer-master/class.pop3.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PHPMailer-master/class.pop3.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PHPMailer-master/class.smtp.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PHPMailer-master/class.smtp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PHPMailer-master/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/PHPMailer-master/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PHPMailer-master/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/PHPMailer-master/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PHPMailer-master/get_oauth_token.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PHPMailer-master/get_oauth_token.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PHPMailer-master/travis.phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/src/PHPMailer-master/travis.phpunit.xml.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/getEmail.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/getEmail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/password_recovery_js.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/password_recovery_js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validateInput.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/validateInput.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,37 +35,52 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/getEmail.php">
+        <entry file="file://$PROJECT_DIR$/password_recovery_email_credentials/password_reset_credentials.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="408">
-              <caret line="24" column="106" selection-start-line="24" selection-start-column="106" selection-end-line="24" selection-end-column="106" />
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/getEmail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#label#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/password_recovery_js.js">
+        <entry file="file://$PROJECT_DIR$/src/js/password_recovery_js.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+            <state relative-caret-position="240">
+              <caret line="86" column="94" selection-start-line="86" selection-start-column="94" selection-end-line="86" selection-end-column="94" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/validateInput.php">
+        <entry file="file://$PROJECT_DIR$/src/validateInput.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="476">
+              <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/captcha_code.php">
+        <entry file="file://$PROJECT_DIR$/src/validatecode.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+            <state relative-caret-position="221">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -77,13 +111,19 @@
         <option value="$PROJECT_DIR$/validateInput.php" />
         <option value="$PROJECT_DIR$/getEmail.php" />
         <option value="$PROJECT_DIR$/js/password_recovery_js.js" />
+        <option value="$PROJECT_DIR$/src/functions.php" />
+        <option value="$PROJECT_DIR$/password_recovery_email_credentials/password_reset_credentials.xml" />
+        <option value="$PROJECT_DIR$/src/validateInput.php" />
+        <option value="$PROJECT_DIR$/src/getEmail.php" />
+        <option value="$PROJECT_DIR$/src/validatecode.php" />
+        <option value="$PROJECT_DIR$/src/js/password_recovery_js.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="654" />
-    <option name="height" value="991" />
+    <option name="x" value="676" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -100,6 +140,23 @@
             <path>
               <item name="php_password_recover_email" type="b2602c69:ProjectViewProjectNode" />
               <item name="php_password_recover_email" type="462c0819:PsiDirectoryNode" />
+              <item name="password_recovery_email_credentials" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php_password_recover_email" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php_password_recover_email" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php_password_recover_email" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php_password_recover_email" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="captcha" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="php_password_recover_email" type="b2602c69:ProjectViewProjectNode" />
+              <item name="php_password_recover_email" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -111,7 +168,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../letmeknow" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -149,12 +206,20 @@
       <workItem from="1564391669325" duration="1172000" />
       <workItem from="1564393849674" duration="1798000" />
       <workItem from="1564396015917" duration="1344000" />
-      <workItem from="1564451591187" duration="4689000" />
+      <workItem from="1564451591187" duration="22021000" />
     </task>
+    <task id="LOCAL-00001" summary="validations improved">
+      <created>1564459306042</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1564459306043</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13061000" />
+    <option name="totallyTimeSpent" value="30393000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -172,7 +237,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -183,6 +248,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="validations improved" />
+    <option name="LAST_COMMIT_MESSAGE" value="validations improved" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/styles/password_recovery_email_style.css">
@@ -218,8 +287,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/password_recovery_js.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+        <state relative-caret-position="221">
+          <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/password_recovery_email_credentials/password_reset_credentials.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/captcha/captcha_code.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/getEmail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validateInput.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validatecode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/password_recovery_js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="86" column="94" selection-start-line="86" selection-start-column="94" selection-end-line="86" selection-end-column="94" />
         </state>
       </provider>
     </entry>
