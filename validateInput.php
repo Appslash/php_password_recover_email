@@ -1,11 +1,14 @@
 <?php
 session_start();
+$response['response']='OK';
 if($_POST["captchaInput"]===$_SESSION["captcha_code"])
     {
-        echo 'Passed';
-    }
-    else {
-        echo 'captcha fail';
-    }
+        $response['captchavalid']='TRUE';
 
+    }
+    else
+    {
+        $response['captchavalid']='FALSE';
+    }
+echo json_encode($response);
 ?>

@@ -11,21 +11,37 @@ function validateInput()
     document.getElementById("buttonIcon").classList.add('w3-spin');
     document.getElementById("buttonIcon").classList.replace('fa-check','fa-spinner');
 
-    $emailInput=document.getElementById("emailInput").value;
-    if(ValidateEmail($emailInput))
+    var emailInput=document.getElementById("emailInput").value;
+    if(ValidateEmail(emailInput))
     {
         //VALIDATION ON SERVER
         $captchaInput=document.getElementById("captchaInput").value;
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-            alert(this.responseText);
-            }
-        };
-        xhttp.open("POST", "validateInput.php", true);
-        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-        xhttp.send("captchaInput="+$captchaInput);
+        if($captchaInput) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var serverResponse = this.responseText;
+                    var obj = JSON.parse(serverResponse);
+                    if(obj.captchavalid=="TRUE")
+                        {
 
+                        }
+                    else
+                        {
+                            document.getElementById("captchaInputError").innerHTML="Invalid captcha";
+                            document.getElementById("captchaInputError").style.display="block";
+                        }
+                }
+            };
+            xhttp.open("POST", "validateInput.php", true);
+            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhttp.send("captchaInput=" + $captchaInput);
+        }
+        else
+        {
+            document.getElementById("captchaInputError").innerHTML="This cannot be empty";
+            document.getElementById("captchaInputError").style.display="block";
+        }
 
         
     }
