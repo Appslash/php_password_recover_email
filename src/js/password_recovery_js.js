@@ -2,7 +2,6 @@ function onPageLoad()
 {
 document.getElementById("emailInputError").style.display="none";
 document.getElementById("captchaInputError").style.display="none";
-
 }
 
 function validateInput() 
@@ -25,7 +24,7 @@ function validateInput()
                     var obj = JSON.parse(serverResponse);
                     if(obj.captchavalid=="TRUE")
                         {
-                            if(obj.response!="NOT_FOUND")
+                            if(obj.responsecode!="NOT_FOUND")
                             {
                                 document.getElementById("popupMessage").innerHTML="Password reset code sent to "+emailInput;
                                 document.getElementById("firstForm").style.display="none";
@@ -60,8 +59,6 @@ function validateInput()
             document.getElementById("captchaInputError").innerHTML="This cannot be empty";
             document.getElementById("captchaInputError").style.display="block";
         }
-
-        
     }
     else
     {
@@ -91,9 +88,19 @@ else {
                     var serverResponse = this.responseText;
                     var obj = JSON.parse(serverResponse);
                     if (obj.codevalid == "TRUE") {
-                        alert(serverResponse);
+                        if(obj.responseCode=="FAIL")
+                        {
+                            document.getElementById("formsBox").style.display = "none";
+                            document.getElementById("negativemessageBox").style.display = "block";
+                        }
+                        if(obj.responseCode=="SUCCESS")
+                        {
+                            document.getElementById("formsBox").style.display = "none";
+                            document.getElementById("positivemessageBox").style.display = "block";
+                        }
                         document.getElementById("buttonIcon2").classList.remove('w3-spin');
                         document.getElementById("buttonIcon2").classList.replace('fa-spinner', 'fa-arrow-right');
+
                     } else {
                         document.getElementById("codeInputError").innerHTML = "Invalid Code";
                         document.getElementById("codeInputError").style.display = "block";
