@@ -14,9 +14,9 @@ What you need to do is .....
 2. copy and paste the entire 'src' folder to the directory where you want to have the password reset functionality on you.
 
 3. Edit and provide the path to the credentials XML file in files 
-   src \ validatecode.php
-   and
-   src \ validateinput.php
+   a. src \ validatecode.php
+   b. src \ validateinput.php
+   c. src \ getEmail.php
    
    comments are mentioned where this is supposed to be done.
    
