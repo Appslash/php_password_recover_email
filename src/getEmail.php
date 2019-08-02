@@ -6,6 +6,13 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="js/password_recovery_js.js"></script>
 <body class="w3-light-gray"  onload="onPageLoad()">
+<div class="w3-container w3-center" id="positivemessageBox">
+    <div class="w3-display-bottommiddle">
+        <a href="http://www.appslash.org" style="text-decoration: none" class="w3-text-dark-grey w3-small">Powered By <img  src="js/logo.png" width="80px"></a>
+
+    </div>
+</div>
+
 <div class="w3-container w3-center" id="positivemessageBox" style="display: none;">
     <div class="w3-display-middle">
         <i class="fa w3-padding fa-check w3-text-green w3-animate-zoom" style="font-size: 200px"></i>
@@ -77,6 +84,9 @@
 
         
         
+    </div>
+    <div class="w3-margin w3-display-topleft w3-text-grey">
+        <a onClick="javascript:history.go(-1)"><i class="fa fa-arrow-left "></i> Back</a>
     </div>
 </div>
 
