@@ -6,7 +6,9 @@ include 'functions.php';
 if(substr($_POST["captchaInput"],0,6)===$_SESSION["captcha_code"])
     {
         $response['captchavalid']='TRUE';
-
+        /**
+         * CHANGE THE PATH BELOW TO REFER TO password_recovery_email_credentials/password_reset_credentials.xml FILE
+         */
         $xml=simplexml_load_file("../password_recovery_email_credentials/password_reset_credentials.xml");
         $table=(string)$xml->credential_table;
         $emailRef=(string)$xml->email_field;

@@ -16,6 +16,9 @@
         session_start();
         session_unset();
         session_destroy();
+        /**
+         * CHANGE THE PATH BELOW TO REFER TO password_recovery_email_credentials/password_reset_credentials.xml FILE
+         */
         $xml = simplexml_load_file("../password_recovery_email_credentials/password_reset_credentials.xml");
         echo (string)$xml->continueLink;
         ?>" class="w3-btn w3-blue w3-round w3-animate-top">Continue <i class="fa fa-arrow-right"></i></a>

@@ -13,6 +13,9 @@ else {
     $response['responseCode'] = 'OK';
     if ($_POST["codeInput"] === (string)$_SESSION["OTP"]) {
         $response['codevalid'] = 'TRUE';
+        /**
+         * CHANGE THE PATH BELOW TO REFER TO password_recovery_email_credentials/password_reset_credentials.xml FILE
+         */
         $xml = simplexml_load_file("../password_recovery_email_credentials/password_reset_credentials.xml");
         $table = (string)$xml->credential_table;
         $update_timestamp_field = (string)$xml->update_timestamp_field;
