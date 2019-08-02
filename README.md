@@ -1,4 +1,4 @@
-# php_password_recover_email
+# php_password_recovery_email
 All in one PHP (core) based solution to change password of your website user accounts using OTP on their registered email. Just name the MySQL table and column name where password and email are stored.
 
 This is a small project that will help you to have password reset procedure for your website account holders be taken care of.
