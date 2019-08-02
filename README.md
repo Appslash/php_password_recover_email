@@ -22,6 +22,6 @@ What you need to do is .....
    
  4. You can use your custom SMTP(like gmail,outlook, etc.) or The SMTP of you web hosting provider to send reset codes over email.
 
-NOTE that : When being operated the functionality unsets and destroys all the active $_SESSION S
+NOTE that : When being operated, The functionality unsets and destroys all the active $_SESSION S
 
 For a full tutorial on on to leverage the watch our youtube video :
