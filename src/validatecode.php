@@ -15,6 +15,7 @@ else {
         $response['codevalid'] = 'TRUE';
         $xml = simplexml_load_file("../password_recovery_email_credentials/password_reset_credentials.xml");
         $table = (string)$xml->credential_table;
+        $update_timestamp_field = (string)$xml->update_timestamp_field;
         $email_password_field = (string)$xml->email_password_field;
         $emailRef = (string)$xml->email_field;
         $servername = (string)$xml->dbserver;
@@ -29,12 +30,14 @@ else {
             $response['responseCode'] = 'DATABASE_ERROR';
         }
 //    $sql="UPDATE ".$table." set ".$email_password_field." = '".$_POST["passwordInput"]."'";
-        $sql = "UPDATE " . $table . " SET " . $email_password_field . " =? where " . $emailRef . "=?";
+        $dt = new DateTime('now', new DateTimezone((string)$xml->timeZone));
+        $stamp=date_format($dt, 'Y-m-d H:i:s');
+        $sql = "UPDATE " . $table . " SET " . $email_password_field . " =? ,".$update_timestamp_field."=?  where " . $emailRef . "=?";
         $stmt = $conn->stmt_init();
         if (!$stmt->prepare($sql)) {
             $response['response'] = 'DATABASE_ERROR';
         } else {
-            $stmt->bind_param("ss", $_POST["passwordInput"], $_SESSION["email"]);
+            $stmt->bind_param("sss", $_POST["passwordInput"],$stamp, $_SESSION["email"]);
             $stmt->execute();
             if ($stmt->affected_rows === 0) {
                 $response['responseCode'] = 'DATABASE_ERROR';
