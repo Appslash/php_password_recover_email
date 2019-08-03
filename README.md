@@ -24,4 +24,4 @@ What you need to do is .....
 
 NOTE that : When being operated, The functionality unsets and destroys all the active $_SESSIONs 
 
-For a full tutorial on on to leverage the watch our youtube video :
+For a full tutorial on on to leverage the watch our youtube video : https://youtu.be/OXY_VlqECDw
