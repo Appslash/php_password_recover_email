@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
-<title>Password Recovery | Get Code</title>
+<title>Password Recovery | AppSlash</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="styles/password_recovery_email_style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="js/key.png"/>
+<!--[if IE]><link rel="shortcut icon" href="js/key.png"><![endif]-->
+<link rel="apple-touch-icon-precomposed" href="js/key.png">
 <script src="js/password_recovery_js.js"></script>
 <body class="w3-light-gray"  onload="onPageLoad()">
 <div class="w3-container w3-center" id="positivemessageBox">
