@@ -9,7 +9,7 @@
 <link rel="apple-touch-icon-precomposed" href="js/key.png">
 <script src="js/password_recovery_js.js"></script>
 <body class="w3-light-gray"  onload="onPageLoad()">
-<div class="w3-container w3-center" id="positivemessageBox">
+<div class="w3-container w3-center">
     <div class="w3-display-bottommiddle">
         <a href="http://www.appslash.org" style="text-decoration: none" class="w3-text-dark-grey w3-small">Powered By <img  src="js/logo.png" width="80px"></a>
 
